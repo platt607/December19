@@ -1,0 +1,15 @@
+import csv
+import re
+data = []
+
+with open('countries.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        data.append(row)
+
+countryName = input('Type in the name of the country that you have visited:\n')
+print('That is country number: {}'.format(data[0][' France']))
+text= 'a:b:c:d'
+delimiter= ':'
+list= text.split(delimiter)
+print(str(list))
